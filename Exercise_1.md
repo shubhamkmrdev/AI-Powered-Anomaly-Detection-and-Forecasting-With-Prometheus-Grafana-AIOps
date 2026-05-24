@@ -1,6 +1,6 @@
 # Step 1: Deploy the Monitoring Stack
 
-## 🚀 Start Your AIOps Environment
+## 🚀 Start Your AIOps Environment.
 
 In this step, you will deploy a complete monitoring environment using Docker Compose.  
 The stack includes:
