@@ -1,6 +1,6 @@
-# In this Exercise: Performing Metric Analysis with PromQL
+## Exercise 3: Performing Metric Analysis with PromQL
 
-## 📘 Project Overview
+# 📘 Exercise Overview
 
 In this project exercise, I explored how to use **PromQL (Prometheus Query Language)** to analyze infrastructure metrics collected by Prometheus.
 
