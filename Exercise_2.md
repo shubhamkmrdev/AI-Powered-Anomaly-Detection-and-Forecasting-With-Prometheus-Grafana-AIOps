@@ -160,6 +160,7 @@ Each service should display the status:
 ```text
 Up
 ```
+<img width="1115" height="136" alt="image" src="https://github.com/user-attachments/assets/d67a9807-ced6-4e46-94c1-465e5c9dd3da" />
 
 ---
 
@@ -299,10 +300,9 @@ This helps identify configuration or startup issues.
 
 Access the Prometheus UI:
 
-1. Open the terminal menu `(⋮)`
-2. Select **View Port**
-3. Enter `9090`
-4. Click **Open Port**
+1. Open the browser terminal:
+2. [`Enter`](http://192.168.56.143:9090/)
+3. Click
 
 Navigate to:
 
@@ -392,6 +392,8 @@ cat /root/prometheus/prometheus.yml
 
 Verify that Prometheus is successfully scraping metrics from Node Exporter.
 
+<img width="1344" height="169" alt="image" src="https://github.com/user-attachments/assets/66745f8f-195f-436b-9f51-46e95b01c2a8" />
+
 ---
 
 # 🔍 View Exported Metrics
@@ -401,6 +403,7 @@ Run:
 ```bash
 curl -s http://localhost:9100/metrics | head -n 30
 ```
+<img width="1121" height="429" alt="image" src="https://github.com/user-attachments/assets/e0e4d38c-11c3-4429-b5c2-b5f50a5ef689" />
 
 ---
 
@@ -413,6 +416,7 @@ curl -s http://localhost:9100/metrics | grep '^node_' | wc -l
 ```
 
 The output should indicate hundreds of available metrics.
+<img width="777" height="32" alt="image" src="https://github.com/user-attachments/assets/c8416a60-77d9-44b0-8580-ae7139bde5f7" />
 
 ---
 
@@ -432,6 +436,7 @@ Status → Targets
 |---|---|---|
 | prometheus | http://prometheus:9090/metrics | UP |
 | node-exporter | http://node-exporter:9100/metrics | UP |
+| Grafana | http://grafana:9100/metrics | UP |
 
 ---
 
@@ -469,6 +474,8 @@ Expected output:
 
 A result of `1` confirms the exporter is reachable.
 
+<img width="1361" height="236" alt="image" src="https://github.com/user-attachments/assets/f725a9dd-8bbe-4091-b044-59f5734db160" />
+
 ---
 
 ## 2. CPU Metrics
@@ -479,6 +486,8 @@ node_cpu_seconds_total
 
 Displays CPU usage counters categorized by mode and CPU core.
 
+<img width="1341" height="552" alt="image" src="https://github.com/user-attachments/assets/90f9cd03-f9c8-41ff-915d-f3f10d57e185" />
+
 ---
 
 ## 3. Available Memory
@@ -486,8 +495,9 @@ Displays CPU usage counters categorized by mode and CPU core.
 ```promql
 node_memory_MemAvailable_bytes
 ```
-
 Shows the amount of currently available system memory.
+
+<img width="1363" height="303" alt="image" src="https://github.com/user-attachments/assets/65d24bdf-adb8-4266-ab95-167f11ef5830" />
 
 ---
 
@@ -498,6 +508,8 @@ node_network_receive_bytes_total
 ```
 
 Displays received network traffic per interface.
+
+<img width="1365" height="340" alt="image" src="https://github.com/user-attachments/assets/7cbd0be3-9f5d-4dd9-901e-438aa3cf1d94" />
 
 ---
 
