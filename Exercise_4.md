@@ -236,6 +236,8 @@ Train an anomaly detection model using historical CPU metrics collected by Prome
 ```bash
 python3 /root/scripts/train_anomaly_model.py
 ```
+<img width="573" height="582" alt="image" src="https://github.com/user-attachments/assets/ef493fb5-abb8-4598-aa80-01c647ec9cee" />
+
 
 ---
 
@@ -311,6 +313,8 @@ The detection script performs the following tasks:
 4. Predicts anomalies
 5. Displays anomaly analysis
 
+<img width="636" height="426" alt="image" src="https://github.com/user-attachments/assets/032ae23b-0c21-4752-b119-9150d1ed6bc0" />
+
 ---
 
 # 📊 Detection Output
@@ -322,6 +326,9 @@ The script classifies data as:
 | 1 | Normal |
 | -1 | Anomaly |
 
+<img width="399" height="114" alt="image" src="https://github.com/user-attachments/assets/fbee51a0-73ab-4959-8712-a8213d83a6d5" />
+
+
 ---
 
 # 📈 Example Detection Summary
@@ -331,6 +338,7 @@ Total samples: 60
 Normal: 54
 Anomalies: 6
 ```
+<img width="374" height="88" alt="image" src="https://github.com/user-attachments/assets/108505d0-f23a-46df-8a64-78437e9b1a67" />
 
 ---
 
@@ -344,6 +352,7 @@ Example:
 Check every 30 seconds
 Analyze last 10 minutes of metrics
 ```
+<img width="590" height="152" alt="image" src="https://github.com/user-attachments/assets/04391e1d-a6de-4107-90ae-b10b6dd1ad81" />
 
 ---
 
