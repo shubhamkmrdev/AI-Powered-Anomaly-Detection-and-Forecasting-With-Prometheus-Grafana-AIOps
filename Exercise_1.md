@@ -61,7 +61,7 @@ services:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=GrafanaRocks123!
+      - GF_SECURITY_ADMIN_PASSWORD=Admin@123!
       - GF_USERS_ALLOW_SIGN_UP=false
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning
@@ -182,6 +182,7 @@ Run the following command from the project directory:
 ```bash
 docker compose up -d
 ```
+<img width="583" height="193" alt="image" src="https://github.com/user-attachments/assets/dacf264a-5be8-4eab-a629-b820dc742c9a" />
 
 > 💡 The `-d` flag runs the containers in detached mode.
 
@@ -194,6 +195,7 @@ Check container status:
 ```bash
 docker compose ps
 ```
+<img width="1111" height="127" alt="image" src="https://github.com/user-attachments/assets/f3d53bcd-6008-46bf-a109-61321399f450" />
 
 Expected output:
 
@@ -236,12 +238,12 @@ Prometheus is Healthy.
 
 # 🌐 Open Prometheus in Browser
 
-1. Open the terminal menu `(⋮)`
-2. Select **View Port**
-3. Enter `9090`
-4. Click **Open Port**
+1. Open the browser terminal
+2. [Enter](http://YourIP:9090/)
+3. Click
 
 You should now see the Prometheus query interface.
+<img width="1365" height="291" alt="image" src="https://github.com/user-attachments/assets/16f3226e-3ce8-443d-96dd-199fd0f22305" />
 
 ---
 
@@ -267,7 +269,7 @@ Grafana provides dashboards and visual analytics for metrics stored in Prometheu
 |---|---|
 | Port | `3000` |
 | Username | `admin` |
-| Password | `GrafanaRocks123!` |
+| Password | `Admin@123!` |
 
 ---
 
@@ -289,12 +291,12 @@ Expected response:
 
 # 🌐 Open Grafana in Browser
 
-1. Open the terminal menu `(⋮)`
-2. Select **View Port**
-3. Enter `3000`
-4. Click **Open Port**
+1. Open the browser terminal
+2. [Enter](http://192.168.56.143:3000/)
+3. Click
 
 The Grafana login page should appear.
+<img width="1362" height="299" alt="image" src="https://github.com/user-attachments/assets/6af0a667-434a-4bfe-98ce-277b95c61dbf" />
 
 ---
 
@@ -328,7 +330,7 @@ Metrics Collection → Analysis → Visualization
 
 # 🎓 Next Steps
 
-In the next stages, you will:
+In the next stages,  will learn:
 
 - Configure additional scrape targets
 - Deploy Node Exporter
