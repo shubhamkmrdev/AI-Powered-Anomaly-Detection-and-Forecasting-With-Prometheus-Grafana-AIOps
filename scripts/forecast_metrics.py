@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
 AI-Driven Forecasting - Prediction Script
-Module 5: AIOps Foundations
-
 This script uses trained Prophet models to generate forecasts for infrastructure
 metrics and predict capacity exhaustion dates for proactive planning.
 """
@@ -36,7 +34,7 @@ except ImportError as e:
 
 # Configuration
 PROMETHEUS_URL = "http://localhost:9090"
-MODEL_DIR = "/root/monitoring/forecasting_models"
+MODEL_DIR = "/root/forecasting_models"
 
 # Metrics configuration (must match train_forecasting_model.py)
 METRICS_CONFIG = {
@@ -344,7 +342,7 @@ def main():
     if not os.path.exists(MODEL_DIR):
         print(f"❌ Model directory not found: {MODEL_DIR}")
         print("\n💡 Please train models first:")
-        print("   python3 /root/monitoring/scripts/train_forecasting_model.py")
+        print("   python3 /root/scripts/train_forecasting_model.py")
         sys.exit(1)
 
     # Load all available models
@@ -361,7 +359,7 @@ def main():
     if not models:
         print("\n❌ No trained models found!")
         print("💡 Please train models first:")
-        print("   python3 /root/monitoring/scripts/train_forecasting_model.py")
+        print("   python3 /root/scripts/train_forecasting_model.py")
         sys.exit(1)
 
     print(f"\n✅ Loaded {len(models)} model(s)\n")
