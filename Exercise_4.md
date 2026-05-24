@@ -2,7 +2,7 @@
 
 ---
 
-# 🎯 Exercise Overview
+# 📘 Exercise Overview
 
 In this project exercise, I implemented an AI-powered anomaly detection workflow using Prometheus, Grafana, and Python machine learning libraries. Instead of relying only on static monitoring thresholds, I trained an `IsolationForest` model to automatically learn normal CPU behavior and detect unusual system activity in real time.
 
