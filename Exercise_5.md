@@ -215,7 +215,6 @@ Where:
 ```bash
 python3 /root/scripts/train_forecasting_model.py
 ```
-
 ---
 
 # ⚙️ What the Training Script Does
@@ -233,6 +232,8 @@ The script:
   - Stable
   - Declining
 - Saves models as `.pkl` files
+
+<img width="639" height="325" alt="image" src="https://github.com/user-attachments/assets/2f3f582d-7282-4e47-a87a-be1230e64ef6" />
 
 ---
 
@@ -297,6 +298,7 @@ Recommended for lab:
 ```text
 7 Days
 ```
+<img width="532" height="127" alt="image" src="https://github.com/user-attachments/assets/f26716ff-3306-4d08-b99e-395d0758a57b" />
 
 ---
 
@@ -318,6 +320,7 @@ CPU will NOT exceed 80% threshold
 Recommendation:
 Continue monitoring, no immediate action required
 ```
+<img width="564" height="385" alt="image" src="https://github.com/user-attachments/assets/cff40833-d099-4e33-9c39-86764a945cbb" />
 
 ---
 
