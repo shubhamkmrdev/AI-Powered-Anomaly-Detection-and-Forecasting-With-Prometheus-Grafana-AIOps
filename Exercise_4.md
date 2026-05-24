@@ -159,14 +159,14 @@ Login credentials:
 
 ```text
 Username: admin
-Password: GrafanaRocks123!
+Password: Admin@123!
 ```
 
 ---
 
 ## Dashboard Verification
 
-Open the pre-configured dashboard:
+configured a dashboard with template- Node Health Monitor.json :
 
 ```text
 Node Health Monitor
@@ -262,21 +262,7 @@ The model uses engineered features to improve anomaly detection accuracy.
 | rolling_mean | Smooth CPU behavior |
 | rolling_std | Detect variability |
 | rate_of_change | Detect spikes |
-| hour | Learn time-based patterns |
-
----
-
-# ⚙️ IsolationForest Configuration
-
-```python
-IsolationForest(
-    contamination=0.1,
-    random_state=42,
-    n_estimators=100
-)
-```
-
----
+| hour | Learn time-based patterns |---
 
 # 📁 Model Output
 
