@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
 AI-Driven Forecasting - Model Training Script
-Module 5: AIOps Foundations
-
 This script trains Prophet time-series forecasting models on historical
 metrics from Prometheus. It learns trends and seasonal patterns to enable
 proactive capacity planning.
